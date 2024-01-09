@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/blickcss"></script>
+    <!-- <link rel="preload" href="https://pay.fondy.eu/icons/dist/fonts/card-number.woff" as="font" type="font/woff" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+    <style> 
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+      :root{
+        --font-main:inter;
+        --gray:#bac1ca; 
+        --gray-1:#818c99;
+        --gray-dark:#3d3d3d;
+      }
+    </style>
+  </head>
+  <body class="bg-#E5E8EB flex flex-center min-h-screen">
+    <div class="w-1140 h-680 bg-f r-16 shw1 flex">
+      <div class="w-730 h-full br-2 bc-#eee p-35+60 flex flex-col gap-40">
+        <a href="https://fondy.ua/ru/" target="_blank">
+          <img src="icon/logo.svg" alt="">
+        </a>
+        <div>
+          <div>
+            <p class="c-$gray fw-500">newbalance.ua</p>
+            <a class="h:td-underline c-$gray mb-12 block" href="https://newbalance.ua/">https://newbalance.ua/</a>
+          </div>
+          <p class="c-$gray-1 mb-10">Order for New Balance 500 синий (1)</p>
+          <div class="c-$gray-dark mb-30">
+            <b class="fs-2rem">
+              6 799,
+              <sup class="fs-1rem">00</sup>
+            </b>
+            <span class="c-$gray fs-1.375rem">руб</span>
+          </div>
+          <button class="flex flex-space w-full p-10 r-8 bg-#F2F3F5 pointer f:outline-5+solid+$gray">
+            <div class="flex ai-c">
+              <img src="icon/card-icon.svg" alt="card"> 
+              <span>Банковская карта</span>
+            </div>
+            <img src="icon/methods.svg" alt="methods">
+          </button>
+        </div>
+      </div>
+      <div class="w-full h-full flex flex-center rel">
+        <div class="w-360">
+          <form class="card_black c-f">
+            <div class="flex flex-col gap-3 rel">
+              <p>НОМЕР КАРТЫ</p>
+              <input type="text" id="card_number">
+              <span id="card_number_ph" class="abs">____ ____ ____ ____</span>
+            </div>
+            <div class="flex gap-10">
+              <div class="flex flex-col gap-3 w-80 rel">
+                <p>ММ/ГГ</p>
+                <input id="card_data" type="text">
+                <span id="card_data_ph" class="abs">__/__</span>
+              </div>
+              <div class="flex flex-col gap-3 rel">
+                <p>CVV2/CVC2</p>
+                <input id="card_cvv" type="text">
+                <span id="card_cvv_ph" class="abs">___</span>
+              </div>
+            </div>
+          </form>
+
+          <button type="button" class="btn_green-f mt-40 w-full fs-18 f:outline-5+solid+$gray">
+            Оплатить &nbsp;<b>6 799,00</b> руб
+          </button>
+        </div>
+        <a href="https://fondy.ua/ru/legal/" class="abs right-24 bottom-20" target="_blank">
+          <img src="icon/guard.svg">
+        </a>
+        
+      </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+

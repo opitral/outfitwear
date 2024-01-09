@@ -1,0 +1,102 @@
+@font-face {
+  font-family: Card Number;
+  src: url(https://pay.fondy.eu/icons/dist/fonts/card-number.woff);
+}
+
+
+.shw1 {
+  box-shadow: 0px 24px 40px rgba(200, 206, 213, 0.6);
+}
+
+*{ line-height: 1.4; }
+
+.btn_green-f{
+  height: 56px;
+  min-height: 56px;
+  padding: 0.625rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: all 200ms;
+  background: linear-gradient(90deg,#2FD769 30%,#1CB751 74%) #1CB751;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 25px 20px -20px #6cf91b83;
+  display: block;
+}
+.btn_green-f:hover{
+  transform: translateY(-3px);
+  filter: brightness(98%);
+}
+
+.card_black {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 15px;
+  gap: 10px;
+  width: 360px;
+  height: 229px;
+  background: linear-gradient(180deg, #606466 0%, #444749 35%, #181E22 100%);
+  box-shadow: 0px 50px 25px -40px #31353999;
+  border-radius: 20px;
+}
+
+.card_black p {
+  margin-bottom: 0.1875rem;
+  font-size: .6875rem;
+  line-height: 1.125rem;
+  color: #fff;
+  opacity: .7;
+}
+
+.card_black input,
+.card_black span{
+  /* -moz-appearance: none;
+  -webkit-appearance: none; */
+  appearance: none;
+  -webkit-appearance: none;
+  font-size: 1.25rem;
+  font-family: Card Number,sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.card_black input{
+  z-index: 9;
+}
+
+.card_black span {
+  bottom: 0;
+  color: gray;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: textfield;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+/* .card_black input::placeholder {
+  opacity: 1;
+}
+
+.card_black input:focus::placeholder {
+  opacity: 0.5; /* change the opacity value to your liking 
+}
+
+.card_black input:not(:placeholder-shown)::placeholder {
+  opacity: 1;
+} */
